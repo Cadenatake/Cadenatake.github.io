@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://Cadenatake.github.io/sitemap.xml
