@@ -12,10 +12,10 @@
     <lastBuildDate>Sat, 25 Jun 2022 23:31:23 +0900</lastBuildDate><atom:link href="https://Cadenatake.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>md5sum(Linux)の出力をGet-FileHash(Powershell)で実現！</title>
-      <link>https://Cadenatake.github.io/posts/hash/</link>
+      <link>https://Cadenatake.github.io/tech_tips/hash/</link>
       <pubDate>Sat, 25 Jun 2022 23:31:23 +0900</pubDate>
       
-      <guid>https://Cadenatake.github.io/posts/hash/</guid>
+      <guid>https://Cadenatake.github.io/tech_tips/hash/</guid>
       <description>お題：Get-FileHash(Powershell)コマンドの出力を、md5sumのフォーマットに合わせてパースする。 使いどころ：
  Get-FileHashコマンドでハッシュ値取得 md5sumコマンドでハッシュ値照合  ができるようになる。
 ※Get-FileHashコマンドにはハッシュ値照合機能がないので、逆はできない。
