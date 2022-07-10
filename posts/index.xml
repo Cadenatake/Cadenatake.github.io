@@ -19,7 +19,7 @@
       <description>お題：Get-FileHash(Powershell)コマンドの出力を、md5sumのフォーマットに合わせてパースする。 使いどころ：
  Get-FileHashコマンドでハッシュ値取得 md5sumコマンドでハッシュ値照合  ができるようになる。
 ※Get-FileHashコマンドにはハッシュ値照合機能がないので、逆はできない。
-PS C:\Users\test&amp;gt; # 1ファイルのみ抽出  PS C:\Users\test&amp;gt; Get-FileHash -a md5 test1 | % { $_.Hash.ToLower() + &amp;#34; &amp;#34; + (Split-Path $_.Path -Leaf) } b990bc6bb668d0e7d72c687da363eae3 test1 PS C:\Users\test&amp;gt; PS C:\Users\test&amp;gt; # カレント全ファイル  PS C:\Users\test&amp;gt; ls .\ | % { (Get-FileHash -a md5 $_.FullName) } | % { $_.Hash.ToLower() + &amp;#34; &amp;#34; + (Split-Path $_.Path -Leaf) } b990bc6bb668d0e7d72c687da363eae3 test1 09bv1b5dadf53efa78278a486604a3aa test2 PS C:\Users\test&amp;gt; その他：ここまでしなくとも、Get-FileHashの出力をサクラエディタで成形してWinMergeで比較という手もある。WindowsとLinuxで改行や文字コードは違うのでそこは無視で。</description>
+PS C:\Users\test&amp;gt; # 1ファイルのみ抽出  PS C:\Users\test&amp;gt; Get-FileHash -a md5 test1 | % { $_.Hash.ToLower() + &amp;#34; &amp;#34; + (Split-Path $_.Path -Leaf) } b990bc6bb668d0e7d72c687da363eae3 test1 PS C:\Users\test&amp;gt; PS C:\Users\test&amp;gt; # カレント全ファイル  PS C:\Users\test&amp;gt; ls .\ | % { (Get-FileHash -a md5 $_.FullName) } | % { $_.Hash.ToLower() + &amp;#34; &amp;#34; + (Split-Path $_.Path -Leaf) } b990bc6bb668d0e7d72c687da363eae3 test1 09bv1b5dadf53efa78278a486604a3aa test2 PS C:\Users\test&amp;gt; その他：ここまでしなくとも、Get-FileHashの出力をサクラエディタで成形してWinMergeで比較という手もある。WindowsとLinuxで改行や文字コードは違うがそこは無視で。</description>
     </item>
     
   </channel>
