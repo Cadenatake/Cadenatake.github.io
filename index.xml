@@ -8,7 +8,18 @@
       <url>https://Cadenatake.github.io/profile.jpg</url>
       <link>https://Cadenatake.github.io/profile.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://Cadenatake.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 25 Jun 2022 23:31:23 +0900</lastBuildDate><atom:link href="https://Cadenatake.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>md5sum(Linux)の出力をGet-FileHash(Powershell)で実現！</title>
+      <link>https://Cadenatake.github.io/posts/hash/</link>
+      <pubDate>Sat, 25 Jun 2022 23:31:23 +0900</pubDate>
+      
+      <guid>https://Cadenatake.github.io/posts/hash/</guid>
+      <description>お題：Get-FileHash(Powershell)コマンドの出力を、md5sumのフォーマットに合わせてパースする。 使いどころ：上記をファイルに書き込むことで、md5sum のチェックオプション &amp;ldquo;-c&amp;rdquo; で読み込ませることが可能になる。ファイル書き込みも可。
+PS C:\Users\test&amp;gt; # 1ファイルのみ抽出  PS C:\Users\test&amp;gt; Get-FileHash -a md5 test1 | % { $_.Hash.ToLower() + &amp;#34; &amp;#34; + (Split-Path $_.Path -Leaf) } b990bc6bb668d0e7d72c687da363eae3 test1 PS C:\Users\test&amp;gt; PS C:\Users\test&amp;gt; # カレント全ファイル  PS C:\Users\test&amp;gt; ls .\ | % { (Get-FileHash -a md5 $_.FullName) } | % { $_.Hash.ToLower() + &amp;#34; &amp;#34; + (Split-Path $_.Path -Leaf) } b990bc6bb668d0e7d72c687da363eae3 test1 09bv1b5dadf53efa78278a486604a3aa test2 PS C:\Users\test&amp;gt; </description>
+    </item>
+    
     <item>
       <title>Profile</title>
       <link>https://Cadenatake.github.io/profile/</link>
@@ -22,7 +33,7 @@ What is Cadenatake?🤔 1996年生まれのインフラエンジニア。
 テスト自動化
 人力要素を極力削ったドキュメント管理 キャリア
 アーキテクトやシニアへの道の自力での築き方
-お給料の増やし方  プログラミングスキル  Python (2系,3系) Bash CMD  お仕事  2019-2021：HPCシステム保守開発(AWS) 2021-2022：CA,EC決済システム 更改(AWS) 2022~ ：EC決済システム 運用構築、ジョブ設計  好きなこと  野球
+お給料の増やし方  プログラミングスキル  Python (2系,3系) Bash CMD  お仕事  2019-2021：HPCシステム(AWS) 保守開発 2021-2022：CA,EC決済システム(AWS) 移行 2022~ ：EC決済システム 運用構築、ジョブ設計(JP1)  好きなこと  野球
 なぜかロッテを中心に見ています。 ゲーム
 いろんなゲームを中途半端に。最近はFall guysを少々。  </description>
     </item>
