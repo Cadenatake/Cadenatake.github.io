@@ -44,7 +44,7 @@ params:
 
   assets:
     # disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
+    disableFingerprinting: true
     favicon: "Thinking_Face_Emoji_large.png"
     favicon16x16: "Thinking_Face_Emoji_large.png"
     favicon32x32: "Thinking_Face_Emoji_large.png"
