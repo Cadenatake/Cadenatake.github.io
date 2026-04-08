@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tech_tips on Cadenatake</title>
-    <link>http://localhost:1313/tech_tips/</link>
+    <link>https://Cadenatake.github.io/tech_tips/</link>
     <description>Recent content in Tech_tips on Cadenatake</description>
     <image>
       <title>Cadenatake</title>
-      <url>http://localhost:1313/profile.jpg</url>
-      <link>http://localhost:1313/profile.jpg</link>
+      <url>https://Cadenatake.github.io/profile.jpg</url>
+      <link>https://Cadenatake.github.io/profile.jpg</link>
     </image>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 25 Jun 2022 23:31:23 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tech_tips/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://Cadenatake.github.io/tech_tips/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>md5sum(Linux)の出力をGet-FileHash(Powershell)で実現！</title>
-      <link>http://localhost:1313/tech_tips/hash/</link>
+      <link>https://Cadenatake.github.io/tech_tips/hash/</link>
       <pubDate>Sat, 25 Jun 2022 23:31:23 +0900</pubDate>
-      <guid>http://localhost:1313/tech_tips/hash/</guid>
+      <guid>https://Cadenatake.github.io/tech_tips/hash/</guid>
       <description>&lt;h3 id=&#34;お題get-filehashpowershellコマンドの出力をmd5sumコマンドのフォーマットに合わせてパースする&#34;&gt;お題：Get-FileHash(Powershell)コマンドの出力を、md5sumコマンドのフォーマットに合わせてパースする。&lt;/h3&gt;
 &lt;p&gt;使いどころ：&lt;br&gt;
 LinuxマシンからWindowsマシンにコピーしたファイルをハッシュ値突合したい場合。&lt;/p&gt;
