@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cadenatake</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Cadenatake</description>
+    <image>
+      <title>Cadenatake</title>
+      <url>http://localhost:1313/profile.jpg</url>
+      <link>http://localhost:1313/profile.jpg</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 08 Apr 2026 02:58:04 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is Cadenatake?🤔</title>
+      <link>http://localhost:1313/profile/</link>
+      <pubDate>Wed, 08 Apr 2026 02:58:04 +0900</pubDate>
+      <guid>http://localhost:1313/profile/</guid>
+      <description>&lt;p&gt;1996年生まれのインフラエンジニア。&lt;br&gt;
+大学卒後、NW分野に関わることを希望したものの新卒時はAWS構築&amp;amp;運用保守からスタート。8年間で10件のプロジェクトを渡り歩き現在に至る。未だにNW周りも楽しそうと思っている。&lt;/p&gt;
+&lt;h1 id=&#34;資格&#34;&gt;資格&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;CCNA(2019/07)&lt;/li&gt;
+&lt;li&gt;LPIC1(2021/07)&lt;/li&gt;
+&lt;li&gt;AWS CLF(2022/02)&lt;/li&gt;
+&lt;li&gt;AWS SAA(2026/02)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;できること&#34;&gt;できること&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Linuxサーバ 詳細設計,構築,テスト&lt;/li&gt;
+&lt;li&gt;NWの簡単な設定(NAT越えとかACLとか)&lt;/li&gt;
+&lt;li&gt;AWSでマネージドのお守り&lt;/li&gt;
+&lt;li&gt;インフラバッチ 要件定義,詳細設計,製造,テスト&lt;/li&gt;
+&lt;li&gt;Minecraftサーバ建て(趣味)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;興味&#34;&gt;興味&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Powershell(CMDより気が利く感じがするので)&lt;/li&gt;
+&lt;li&gt;仕事面で自分の苦手なことのカバーの仕方&lt;br&gt;
+テスト自動化&lt;br&gt;
+人力要素を極力削ったドキュメント管理&lt;/li&gt;
+&lt;li&gt;キャリア&lt;br&gt;
+アーキテクトやシニアへの道の自力での築き方&lt;br&gt;
+お給料の増やし方&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;プログラミングスキル&#34;&gt;プログラミングスキル&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;Bash&lt;/li&gt;
+&lt;li&gt;CMD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;お仕事&#34;&gt;お仕事&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;2019-2021：HPCシステム(AWS) 保守開発&lt;/li&gt;
+&lt;li&gt;2021-2022：CA,EC決済システム(AWS) 移行&lt;/li&gt;
+&lt;li&gt;2022~       ：EC決済システム 運用構築、ジョブ設計(JP1)&lt;/li&gt;
+&lt;li&gt;2023~ ：これから編集します…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;好きなこと&#34;&gt;好きなこと&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;野球&lt;br&gt;
+なぜかロッテを中心に見ています。&lt;/li&gt;
+&lt;li&gt;ゲーム&lt;br&gt;
+いろんなゲームを中途半端に。最近はFall guysを少々。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>md5sum(Linux)の出力をGet-FileHash(Powershell)で実現！</title>
+      <link>http://localhost:1313/tech_tips/hash/</link>
+      <pubDate>Sat, 25 Jun 2022 23:31:23 +0900</pubDate>
+      <guid>http://localhost:1313/tech_tips/hash/</guid>
+      <description>&lt;h3 id=&#34;お題get-filehashpowershellコマンドの出力をmd5sumコマンドのフォーマットに合わせてパースする&#34;&gt;お題：Get-FileHash(Powershell)コマンドの出力を、md5sumコマンドのフォーマットに合わせてパースする。&lt;/h3&gt;
+&lt;p&gt;使いどころ：&lt;br&gt;
+LinuxマシンからWindowsマシンにコピーしたファイルをハッシュ値突合したい場合。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PS C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\U&lt;/span&gt;sers&lt;span style=&#34;color:#ae81ff&#34;&gt;\t&lt;/span&gt;est&amp;gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 1ファイルのみ抽出  &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PS C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\U&lt;/span&gt;sers&lt;span style=&#34;color:#ae81ff&#34;&gt;\t&lt;/span&gt;est&amp;gt; Get-FileHash -a md5 test1 | % &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt; $_.Hash.ToLower&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; + &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;  &amp;#34;&lt;/span&gt; + &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Split-Path $_.Path -Leaf&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;   
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;b990bc6bb668d0e7d72c687da363eae3  test1  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PS C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\U&lt;/span&gt;sers&lt;span style=&#34;color:#ae81ff&#34;&gt;\t&lt;/span&gt;est&amp;gt;   
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PS C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\U&lt;/span&gt;sers&lt;span style=&#34;color:#ae81ff&#34;&gt;\t&lt;/span&gt;est&amp;gt; &lt;span style=&#34;color:#75715e&#34;&gt;# カレント全ファイル  &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PS C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\U&lt;/span&gt;sers&lt;span style=&#34;color:#ae81ff&#34;&gt;\t&lt;/span&gt;est&amp;gt; ls .&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;| % &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Get-FileHash -a md5 $_.FullName&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt; | % &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt; $_.Hash.ToLower&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; + &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;  &amp;#34;&lt;/span&gt; + &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Split-Path $_.Path -Leaf&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;b990bc6bb668d0e7d72c687da363eae3  test1  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;09bv1b5dadf53efa78278a486604a3aa  test2  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PS C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\U&lt;/span&gt;sers&lt;span style=&#34;color:#ae81ff&#34;&gt;\t&lt;/span&gt;est&amp;gt;   
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;以上！&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tech_tips on Cadenatake</title>
+    <link>http://localhost:1313/tech_tips/</link>
+    <description>Recent content in Tech_tips on Cadenatake</description>
+    <image>
+      <title>Cadenatake</title>
+      <url>http://localhost:1313/profile.jpg</url>
+      <link>http://localhost:1313/profile.jpg</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 25 Jun 2022 23:31:23 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tech_tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>md5sum(Linux)の出力をGet-FileHash(Powershell)で実現！</title>
+      <link>http://localhost:1313/tech_tips/hash/</link>
+      <pubDate>Sat, 25 Jun 2022 23:31:23 +0900</pubDate>
+      <guid>http://localhost:1313/tech_tips/hash/</guid>
+      <description>&lt;h3 id=&#34;お題get-filehashpowershellコマンドの出力をmd5sumコマンドのフォーマットに合わせてパースする&#34;&gt;お題：Get-FileHash(Powershell)コマンドの出力を、md5sumコマンドのフォーマットに合わせてパースする。&lt;/h3&gt;
+&lt;p&gt;使いどころ：&lt;br&gt;
+LinuxマシンからWindowsマシンにコピーしたファイルをハッシュ値突合したい場合。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PS C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\U&lt;/span&gt;sers&lt;span style=&#34;color:#ae81ff&#34;&gt;\t&lt;/span&gt;est&amp;gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 1ファイルのみ抽出  &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PS C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\U&lt;/span&gt;sers&lt;span style=&#34;color:#ae81ff&#34;&gt;\t&lt;/span&gt;est&amp;gt; Get-FileHash -a md5 test1 | % &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt; $_.Hash.ToLower&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; + &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;  &amp;#34;&lt;/span&gt; + &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Split-Path $_.Path -Leaf&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;   
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;b990bc6bb668d0e7d72c687da363eae3  test1  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PS C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\U&lt;/span&gt;sers&lt;span style=&#34;color:#ae81ff&#34;&gt;\t&lt;/span&gt;est&amp;gt;   
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PS C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\U&lt;/span&gt;sers&lt;span style=&#34;color:#ae81ff&#34;&gt;\t&lt;/span&gt;est&amp;gt; &lt;span style=&#34;color:#75715e&#34;&gt;# カレント全ファイル  &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PS C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\U&lt;/span&gt;sers&lt;span style=&#34;color:#ae81ff&#34;&gt;\t&lt;/span&gt;est&amp;gt; ls .&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;| % &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Get-FileHash -a md5 $_.FullName&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt; | % &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt; $_.Hash.ToLower&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; + &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;  &amp;#34;&lt;/span&gt; + &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Split-Path $_.Path -Leaf&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;b990bc6bb668d0e7d72c687da363eae3  test1  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;09bv1b5dadf53efa78278a486604a3aa  test2  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PS C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\U&lt;/span&gt;sers&lt;span style=&#34;color:#ae81ff&#34;&gt;\t&lt;/span&gt;est&amp;gt;   
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;以上！&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
